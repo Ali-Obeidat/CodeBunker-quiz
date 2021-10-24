@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: Roboto, -apple-system, 'Helvetica Neue', 'Segoe UI', Arial,
+  font-family: Roboto, -apple-system, "Helvetica Neue", "Segoe UI", Arial,
     sans-serif;
   background: #fef4e8;
 }
@@ -105,7 +105,7 @@ body {
 }
 
 .underline::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: inherit;
@@ -313,7 +313,7 @@ strong {
   margin-bottom: 10px;
 }
 
-.form [type='submit'] {
+.form [type="submit"] {
   opacity: 0;
   display: block;
   min-width: 120px;
@@ -325,7 +325,7 @@ strong {
   transition: all 0.3s ease-out;
 }
 
-.form-wrapper.is-active .form [type='submit'] {
+.form-wrapper.is-active .form [type="submit"] {
   opacity: 1;
   transform: translateX(0);
   transition: all 0.4s ease-in;
@@ -372,4 +372,17 @@ strong {
 }
 #login-password:focus {
   background-color: rgb(251, 208, 158);
+}
+@media (max-width: 480px) {
+  .form-wrapper {
+    width: 250px;
+    margin-left: 10px;
+    align-items: center;
+  }
+  .switcher-login {
+    transform: translateX(90px);
+  }
+  .switcher-signup {
+    transform: translateX(-90px);
+  }
 }
