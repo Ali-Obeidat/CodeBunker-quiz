@@ -8,19 +8,11 @@ console.log (firstName);
 
 let lastName = document.querySelector("#lname");
 let lnameReq = document.querySelector(".lnameReq");
-
-
 let Email = document.querySelector("#email");
 let regexEmail = /^[A-z0-9]+@(gmail|yahoo).com$/;
 let emailReq = document.querySelector(".emailReq");
-
-
 let Comment = document.querySelector("#comment");
 let commentReq = document.querySelector(".commentReq");
-
-
-
-
 
 submit.addEventListener("click", function (e) {
     e.preventDefault();
@@ -57,24 +49,8 @@ submit.addEventListener("click", function (e) {
         lastName.value != "" && firstName.value != "" &&
         Comment.value != ""
     ) {
-        
-        
-            alert("your message sent successfully");
-            window.open ("/home.html");
+        alert("your message sent successfully");
+        window.open ("/home.html");
           
     }
-        
-
-
-    
-
-
-
-
-
-
-
-    
-    
-   
 });
