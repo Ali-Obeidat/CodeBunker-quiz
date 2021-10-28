@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Bunker | Category</title>
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/category.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container border-bottom border-warning border-1">
+        <img class="navbar-brand" src="../imgs/logoH.svg" alt="logo" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">
+                Home
+              </a>
+            </li>
+            <li class="nav-item item-home">
+              <a
+                class="nav-link link-home"
+                aria-current="page"
+                href="contact.html"
+              >
+                Contact Us
+              </a>
+            </li>
+            <li class="nav-item home-btn-login">
+              <a class="nav-link" href="">Log out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="titel">
+        <h1 class="heading">
+          <span style="color: #404d68">Welcome</span>
+          <span class="fname"></span>
+        </h1>
+        <p class="sub-heading">
+          Choose your quiz to strengthen your knowledge.
+          <br />
+          <br />
+        </p>
+      </div>
+      <div class="quiz">
+        <div class="quiz-titel">
+          <h2>
+            We have three quizzes; once you choose one, the quiz instructions
+            will display.
+          </h2>
+        </div>
+      </div>
+      <div class="box">
+        <div class="Quizzes-boxes">
+          <div class="first-box">
+            <div class="Html">
+              <img src="../imgs/HTMLLOGO.png" alt="" />
+              <div class="Html-p">
+                <p>HTML</p>
+              </div>
+            </div>
+            <div class="css">
+              <img src="../imgs/CSSLOGO.png" alt="" />
+              <div class="Html-p">
+                <p>CSS</p>
+              </div>
+            </div>
+            <div class="js">
+              <img src="../imgs/JSLOGO.png" alt="" />
+              <div class="Html-p">
+                <p>JavaScript</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal modal_html" id="model-html">
+        <div class="modal-header">
+          <div class="title">HTML</div>
+          <button id="close-html" class="close-button">&times;</button>
+        </div>
+        <div class="img"><img src="../imgs/HTMLLOGO.png" alt="" /></div>
+        <div class="modal-body">
+          <p>
+            HTML is a primary markup language for creating websites. Test your
+            knowledge with this basic HTML quiz made especially for beginners
+          </p>
+          <p class="info">
+            The test contains 7 questions. <br />
+            Quiz duration: 15 sec per question
+          </p>
+          <a href="quize.html" class="start_btn category-button">
+            Start Quiz!
+          </a>
+        </div>
+      </div>
+      <div class="modal modal_css" id="model-css">
+        <div class="modal-header">
+          <div class="title">CSS</div>
+          <button id="close-css" class="close-button">&times;</button>
+        </div>
+        <div class="img"><img src="../imgs/CSSLOGO.png" alt="" /></div>
+
+        <div class="modal-body">
+          <p>
+            (CSS) Add the style and graphics to your page to make it
+            interactive.Test your knowledge with this basic CSS quiz made
+            especially for beginners.
+          </p>
+          <p class="info">
+            The test contains 7 questions. <br />
+            Quiz duration: 15 sec per question
+          </p>
+          <a href="quize.html" class="category-button start_btn">
+            Start Quiz!
+          </a>
+        </div>
+      </div>
+      <div class="modal modal_js" id="model-js">
+        <div class="modal-header">
+          <div class="title">JavaScript</div>
+          <button id="close-js" class="close-button">&times;</button>
+        </div>
+        <div class="img">
+          <img class="js-img" src="../imgs/JSLOGO.png" alt="" />
+        </div>
+
+        <div class="modal-body">
+          <p>
+            JS is programming language that adds interactivity to your website.
+            Test your knowledge with this basic JS quiz made especially for
+            beginners.
+          </p>
+          <p class="info">
+            The test contains 7 questions. <br />
+            Quiz duration: 15 sec per question
+          </p>
+          <a href="quize.html" class="start_btn category-button">
+            Start Quiz!
+          </a>
+        </div>
+      </div>
+    </section>
+    <div id="overlay"></div>
+    <footer>
+      <div class="container">
+        <div class="logo">
+          <img src="../imgs/logoH.png" alt="" />
+        </div>
+        <div class="social-icon">
+          <a
+            href="mailto:hazem.alrfati@gmail.com"
+            rel="noopener"
+            target="_blank"
+            class="icon"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://Youtube.com" target="_blank" class="icon">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.apple.com/store" target="_blank" class="icon">
+            <i class="fab fa-app-store"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/category.js"></script>
+  </body>
+</html>
