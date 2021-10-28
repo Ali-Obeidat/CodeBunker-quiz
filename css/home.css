@@ -101,16 +101,24 @@ li.home-btn-login.nav-item:hover .nav-link {
   font-size: 24px;
   font-family: "Scheherazade New", serif;
 }
-.getStart {
+/* .getStart-link {
   border: none;
   background-color: #f99821;
   padding: 12px 18px;
   border-radius: 5px;
   font-size: 18px;
-}
-.getStart a {
+} */
+.getStart-link a {
   color: white;
   text-decoration: none;
+}
+.home-btn-getStart {
+  border: none;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 12px 18px;
+  color: white;
 }
 
 .info {
