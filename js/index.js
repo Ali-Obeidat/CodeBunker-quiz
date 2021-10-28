@@ -1,5 +1,5 @@
 let loginBtn = document.querySelector(".login-link");
-let getStartBtn = document.querySelector(".getStart");
+let getStartBtn = document.querySelector(".getStart-link");
 window.onload = function () {
   if (localStorage.getItem("sessionState") === "true") {
     loginBtn.innerHTML = "Log out";
