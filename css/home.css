@@ -1,0 +1,205 @@
+body {
+  background-color: #fef4e8;
+}
+:root {
+  --body-color: #fef4e8;
+  --main-color: #f99821;
+  --hover-text-color: #ff8c00;
+}
+.navbar-nav > .nav-item:first-child {
+  position: relative;
+}
+
+.navbar-brand {
+  width: 120px;
+}
+
+.navbar-nav > .nav-item:first-child .nav-link {
+  color: black;
+}
+
+.navbar-nav > .nav-item:first-child .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 8px;
+  bottom: 0;
+  background-color: var(--hover-text-color);
+}
+
+.navbar-nav > .nav-item:first-child .nav-link:hover::before {
+  width: calc(100% - 16px);
+}
+
+.navbar-nav > .nav-item:first-child .nav-link:hover {
+  color: var(--hover-text-color);
+}
+
+.home-btn-login {
+  background-color: var(--main-color);
+  border-radius: 8px;
+  padding: 0 10px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+li.home-btn-login.nav-item .nav-link {
+  color: white;
+  font-weight: 500;
+}
+
+li.home-btn-login.nav-item:hover .nav-link {
+  color: white;
+}
+.navbar-nav li,
+.home-content .home-btn-getStart,
+.navbar-nav > .nav-item:first-child .nav-link::before {
+  transition: all 0.3s;
+}
+
+.home-btn-login:hover,
+.home-btn-getStart:hover {
+  background-color: #e9860d;
+}
+.theem-btn {
+  position: absolute;
+  bottom: 150px;
+  right: 70px;
+  border: none;
+  background-color: #f99821;
+  padding: 12px 12px;
+  border-radius: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.home {
+  margin-left: 90px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  align-content: space-around;
+  padding-bottom: 80px;
+}
+.home-titel {
+  font-family: "Scheherazade New", serif;
+  font-weight: bolder;
+  font-size: 50px;
+  color: #20325a;
+  margin-bottom: 20px;
+}
+.home-text {
+  color: #505153;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  margin-bottom: 10px;
+  width: 80%;
+}
+.home-span {
+  color: #ff8c00;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "Scheherazade New", serif;
+}
+.getStart {
+  border: none;
+  background-color: #f99821;
+  padding: 12px 18px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.getStart a {
+  color: white;
+  text-decoration: none;
+}
+
+.info {
+  margin-top: 40px;
+  width: 50%;
+  animation: left 3s ease;
+  padding-bottom: 40px;
+  font-size: 50px;
+  font-weight: 400px;
+}
+
+@keyframes left {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.img {
+  width: 40%;
+  animation: right 3s ease;
+}
+@keyframes right {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+footer {
+  border-top: 1px solid orange;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .container .social-icon {
+  display: flex;
+  gap: 15px;
+}
+
+footer .container .social-icon a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #404d68;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+footer .container .social-icon a i {
+  font-size: 20px;
+  color: #fef4e8;
+  transition: all 0.3s;
+}
+
+footer .container .social-icon a i:hover {
+  font-size: 28px;
+}
+@media (max-width: 991.8px) {
+  .home {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 0;
+    width: 95%;
+    margin-left: 0;
+    padding-top: 20px;
+    flex-direction: column;
+  }
+  .img {
+    width: 80%;
+  }
+  .home-text {
+    margin-left: 45px;
+  }
+  .info {
+    width: 100%;
+  }
+  .two {
+    display: none;
+  }
+}
