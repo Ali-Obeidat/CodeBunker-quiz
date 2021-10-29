@@ -99,7 +99,6 @@ li.home-btn-login.nav-item:hover .nav-link {
   color: #f99821;
 }
 
-
 .heading {
   font-weight: 700;
   text-align: center;
@@ -393,6 +392,7 @@ footer .container .social-icon a i:hover {
   .first-box {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .modal {
     position: fixed;
@@ -400,18 +400,29 @@ footer .container .social-icon a i:hover {
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
-    border: 1px solid #f99821;
+    border: 3px solid #404d68;
     border-radius: 10px;
     z-index: 10;
     background-color: white;
     width: 600px;
-    max-width: 60%;
+    max-width: 500px;
     height: 600px;
     background-color: #fcecdd;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 20px;
+  }
+  .Html,
+  .css,
+  .js {
+    width: 220px;
+  }
+  .Html img,
+  .css img,
+  .js img {
+    width: 180px;
+    height: 200px;
   }
 }
 @media (max-width: 630px) {
@@ -426,12 +437,34 @@ footer .container .social-icon a i:hover {
     z-index: 10;
     background-color: white;
     width: 600px;
-    max-width: 60%;
+    max-width: 350px;
     height: 600px;
     background-color: #fcecdd;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 20px;
+  }
+  .first-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Html,
+  .css,
+  .js {
+    width: 100px;
+  }
+  .Html img,
+  .css img,
+  .js img {
+    width: 100px;
+    height: 120px;
+  }
+  .Html p,
+  .css p,
+  .js p {
+    font-size: medium;
+    text-align: center;
   }
 }
